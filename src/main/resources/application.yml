@@ -1,0 +1,61 @@
+spring:
+  application:
+    name: congestion-tax-calculator
+
+congestion:
+  taxFreeVehicle:
+    - Emergency vehicles
+    - Busses
+    - Diplomat vehicles
+    - Motorcycles
+    - Military vehicles
+    - Foreign vehicles
+  holidays:
+    - 01-01-2013
+    - 28-03-2013
+    - 30-03-2013
+    - 01-04-2013
+    - 30-04-2013
+    - 01-05-2013
+    - 08-05-2013
+    - 09-05-2013
+    - 05-06-2013
+    - 06-06-2013
+    - 21-06-2013
+    - 01-11-2013
+    - 24-12-2013
+    - 25-12-2013
+    - 26-12-2013
+    - 31-12-2013
+  tax:
+    - startTime: "06:00"
+      endTime: "06:29"
+      tax: 8
+    - startTime: "06:30"
+      endTime: "06:59"
+      tax: 13
+    - startTime: "07:00"
+      endTime: "07:59"
+      tax: 18
+    - startTime: "08:00"
+      endTime: "08:29"
+      tax: 13
+    - startTime: "08:30"
+      endTime: "14:59"
+      tax: 8
+    - startTime: "15:00"
+      endTime: "15:29"
+      tax: 13
+    - startTime: "15:30"
+      endTime: "16:59"
+      tax: 18
+    - startTime: "17:00"
+      endTime: "17:59"
+      tax: 13
+    - startTime: "18:00"
+      endTime: "18:29"
+      tax: 8
+    - startTime: "18:30"
+      endTime: "05:59"
+      tax: 0
+
